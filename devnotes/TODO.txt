@@ -1,5 +1,6 @@
+change balance (make shit more expensive)
+
 add combat (almost done)
 
 add pet heavy
 
-make css scaling better (more specifically make it possible to play on smaller screens)

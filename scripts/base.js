@@ -62,6 +62,13 @@ function update() {
     document.getElementById("atk").textContent = "Attack: " + attack
     document.getElementById("def").textContent = "Defense: " + defense
     document.getElementById("dod").textContent = "Dodge: " + dodge
+
+
+		if (ascendlevel == 1) {
+			if (scoutCoins > 25000) {
+				consoleUpdate("You are half way to ascending, keep it up. ")
+			}
+		}
     
 }
 
