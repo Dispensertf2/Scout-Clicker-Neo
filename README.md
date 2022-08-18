@@ -1,2 +1,2 @@
-# scoutclickerneo
- Scout Clicker: REBORN
+# Scout Clicker Neo
+The new and reborn Scout Clicker
