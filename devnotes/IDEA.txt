@@ -1,0 +1,112 @@
+Scout Clicker is a game about the scout from tf2.
+You collect Scout Coins and buy things.
+However the IRS is watching over your operation, 
+if you get too much in debt then they will start taking money, and if you
+have no money then they will reset your save.
+
+-- Level One -- 
+
+You can buy Lipton, Lipton increases the ammount of coins you can click.
+
+You can buy generators:
+
+Counterfit Scout Generator - This generates one scout per 3 seconds.
+Cost: 145
+Heavy - The Heavy generates 3 scouts every 2 seconds, mmm hard labour.
+Cost: 300
+Namebrand Scout Generator - The More premium Scout Generator, it generates 2 scouts every second.
+Cost: 750
+Yeti - Instead of a heavy generating it you get a yeti, the yeti is strong and can generate 
+4 scounds in 1 second.
+Cost: 2000
+
+--Level Two -- 
+At 50,000 Scout Coins you get to ascend to the next level. 
+You ascend to the galaxy and become a statue, you also gain a bunch of new things. 
+
+You gain new stats:
+Defense
+Attack
+Dodge
+
+
+The lipton gods give you a pet heavy, the pet heavy can be trained and fed. 
+
+If you take care of him by feeding him and training him then he will give you benefits such as:
+A random chance of recieving a bonus like, extra scout coins, extra scout mod, payoff debt.
+He can increase your attack the more training you give him.
+
+If he isn't level 50 then you can't take the requirments to ascend.
+
+You also unlock Engies weapon shop.
+Engie can give you weapons like:
+Shotgun - ATK 10, COST: 20000
+Super Sword - ATK 30, COST: 35000
+Sentrys - ATK 5 per sentry, COST: 20000
+Dispensers - DEF +5 per dispenser, COST: 25000
+Ultra Rocket Launcher - ATK 100, COST: 150000
+
+Health potion - increases health in fight, COST: 5000
+Steriod - increases atk for 5 secs, COST: 20000
+
+All your generators reset and you get new generators:
+
+Alien - Generates 5 scouts in 3 seconds
+Costs: 500 
+UFO - Generates 10 scouts in 1 second 
+Costs: 2000
+Meteor - Generates 20 scouts in 0.5 seconds 
+Costs: 25000
+Wormhole - Generates 100 scouts in 0.5 seconds 
+Costs: 75000
+
+Now why is there extra stats, because one of the requirments to ascend again is to takedown the IRS.
+When you reach 100000 scout coins you can fight them:
+
+IRS soldiers - The first enemy, HLTH: 1000, ATK: 5 every second 
+IRS captain - Powerful and can deal some good damage, HLTH: 10,000, ATK: 15 every second
+IRS mega ship - The final boss and is super hard to kill, HLTH: 100,000, ATK: 50 every second. 
+
+Once you beat the IRS you can ascend for 500000 
+
+--Level Three --- 
+
+This is the final level. You ascend to a spirit.
+
+There are new generators:
+
+Sheep - Generates 500 scouts every 3 seconds
+Costs: 100000
+Angel - Generates 1500 scouts every second 
+Costs: 200000
+Demi God - Generates 5000 scouts every second 
+Costs: 500000
+Mini God - Generates 10000 scouts every second
+Costs: 1,000,000
+
+You can buy new stuff at engies shop:
+
+Holy Trident - ATK: 500, COST: 200000
+Power Cross - ATK: 750, COST: 300000
+God Hand - ATK: 5000, COST: 750000
+
+Holy Water - Increases health by 500, costs 100,000
+
+Now you can train your pet heavy to 200 levels 
+
+When you reach 1,000,000 scout coins you can fight God.
+God is super powerful, he has 1,000,000 health and 500 attack per second.
+
+If you beat god you can finish the game for 10,000,000 scout coins 
+
+--End Game--
+Idk might add more stuff as I develop
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,206 @@
+<!-- Hello if you're reading this please play through the game and then come back and look through the code, there is a lot of spoilers in here. 
+
+ALSO ALSO!! Don't steal my code please, if you do credit. And all of these assets are mine, don't use them anywhere else, even with permission!
+
+Actually minus the backgrounds
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Scout Clicker NEO</title>
+    <link rel="icon" href="assets/webpage/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <nav class="navtop">
+        <a>Scout Clicker NEO</a>
+        <a> | </a>
+        <a href="javascript:saveGame()">Save Game | </a>
+        <a href="javascript:loadGame()">Load Game | </a>
+        <a href="javascript:resetGame()">Reset Game</a>
+    </nav>
+
+    <div class="gameplay">
+        <div id="scoutCoins">Scout Coins: 0</div>
+        <div id="scoutDebt">Debt: 0</div>
+        <div id="scoutMod">Mod: 1</div>
+
+        <div id="scoutbutton" class="scoutbutton" onclick="plusScoutCoin()" >
+            <img src="assets/button/scout384.png" class="scoutbuttonimg" id="scoutbuttonimage"></img>
+    
+        </div>
+
+        
+        
+    </div>
+    <div class="debtbutton" onclick="payDebt()">
+        <img src="assets/button/payoffdebt.png" ></img>
+        <p >Pay off debt</p>
+    </div>
+
+    <div class="genstatus">
+        <div id="stats">
+            <div id="atk">Attack: 0</div>
+            <div id="def">Defense: 0</div>
+            <div id="dod">Dodge: 0</div>
+        </div>
+        <br>
+        <div id="gen1">
+            <div id="csfgs">Counterfeit Scout Generators: 0</div>
+            <div id="heavys">Heavys: 0</div>
+            <div id="nbsgs">Namebrand Scout Generators: 0</div>
+            <div id="yetis">Yetis: 0</div>
+
+        </div>
+        <div id="gen2">
+            <div id="aliens">Aliens: 0</div>
+            <div id="ufos">Ufos: 0</div>
+            <div id="meteors">Meteors: 0</div>
+            <div id="wormholes">Wormholes: 0</div>
+        </div>
+    </div>
+
+    <div class="shopopen" onclick="openshop()">
+        Open Shop Menu
+    </div>
+
+    <div id="shop" class="shop">
+        <div class="exitshop" onclick="closeshop()">
+            Close Shop
+        </div>
+        <a> (you can scroll up and down btw)</a>
+        <br>
+        <!-- Level One Items-->
+        <div id="level1items">
+
+            <div class="shopbutton" onclick="buyItem(0)">
+                <img src="assets/levelone/lipton.png" class="shopicon"></img>
+                <p>Lipton Tea</p>
+                <div id="lipprice">Costs: 10 Scout Coins</div>
+            </div>
+            <p></p>
+            <div class="shopbutton" onclick="buyItem(1)">
+                <img src="assets/levelone/cfsg.png" class="shopicon"></img>
+                <p>Counterfeit Scout Generator</p>
+                <div id="cfsgprice">Costs: 100 Scout Coins</div>
+                <p>1 Scout Coin every 3 seconds</p>
+            </div>
+            <div class="shopbutton" onclick="buyItem(2)">
+                <img src="assets/levelone/heavy.png" class="shopicon"></img>
+                <p>Heavy</p>
+                <div id="heavyprice">Costs: 300 Scout Coins</div>
+                <p>3 Scout Coins every 2 seconds</p>
+            </div>
+            <div class="shopbutton" onclick="buyItem(3)">
+                <img src="assets/levelone/nbsg.png" class="shopicon"></img>
+                <p>Namebrand Scout Generator</p>
+                <div id="nbsgprice">Costs: 750 Scout Coins</div>
+                <p>2 Scout Coins every 1 seconds</p>
+            </div>
+            <div class="shopbutton" onclick="buyItem(4)">
+                <img src="assets/levelone/yeti.png" class="shopicon"></img>
+                <p>Yeti</p>
+                <div id="yetiprice">Costs: 2000 Scout Coins</div>
+                <p>6 Scout Coins every 1 seconds</p>
+            </div>
+        </div>
+
+        <div id="level2items">
+            <p></p>
+            <div class="shopbutton" onclick="buyItem(5)">
+                <img src="assets/leveltwo/alien.png" class="shopicon"></img>
+                <p>Alien</p>
+                <div id="alienprice">Costs: 500 Scout Coins</div>
+                <p>5 Scout Coin every 3 seconds</p>
+            </div>
+            <div class="shopbutton" onclick="buyItem(6)">
+                <img src="assets/leveltwo/ufo.png" class="shopicon"></img>
+                <p>UFO</p>
+                <div id="ufoprice">Costs: 2000 Scout Coins</div>
+                <p>10 Scout Coins every 1 seconds</p>
+            </div>
+            <div class="shopbutton" onclick="buyItem(7)">
+                <img src="assets/leveltwo/meteor.png" class="shopicon"></img>
+                <p>Meteor</p>
+                <div id="meteorprice">Costs: 25000 Scout Coins</div>
+                <p>20 Scout Coins every 0.5 seconds</p>
+            </div>
+            <div class="shopbutton" onclick="buyItem(8)">
+                <img src="assets/leveltwo/wormhole.png" class="shopicon"></img>
+                <p>Wormhole</p>
+                <div id="wormholeprice">Costs: 75000 Scout Coins</div>
+                <p>100 Scout Coins every 0.5 seconds</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="console">
+        <img src="assets/levelone/contracker.png">
+        <div id="messagebox" clas="messagebox">
+            This is the contracker, it can tell you useful info</div>
+    </div>
+
+    <div class="ascendbutton" id="ascendbutton" onclick="ascendReset()">
+        <img src="assets/levelone/ascend.png"></img>
+        <div>
+            Ascend</div>
+    </div>
+
+    <div class="weaponshopopen" id="weaponshopopen" onclick="weaponshopopen()">
+        Open Weapon Shop
+
+    </div>
+
+    <div class="weaponshop" id="weaponshop">
+        <div onclick="closeweaponshop()" style="text-decoration:underline">
+            Close
+        </div>
+        <p>Weapon Shop</p>
+        <div class="engieportrait">
+            <img src="assets/leveltwo/engie256.png"></img>
+            <p id="engiedialogue">Welcome to Engies weapon shop, what can I get you</p>
+            <a href="javascript:openbattlemenu('dummy')">Shooting Range</a>
+
+        </div>
+        <div class="weaponselection">
+            <div class="shopbutton" onclick="purchaseweapon(0)">
+                <img src="assets/weapons/shoutgun.png"></img>
+                <div>Shotgun</div>
+                <div>Costs: 2000 Scout Coins</div>
+                <div>ATK: +10</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="battlemenuparent" id="battlemenuparent">
+        <a href="javascript:closebattlemenu()" class="battlexit">X</a>
+        <div class="battlemenu" id="battlemenu">
+            <p id="enemystats"></p>
+            <img id="enemy_sprite" class="enemy_sprite" onclick="enemyattack()">
+        </div>
+    </div>
+
+
+
+    <div class="secret1" onclick="coolmode()">@</div>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/enemytypes.js"></script>
+    <script src="scripts/base.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/generators.js"></script>
+    <script src="scripts/shop.js"></script>
+    <script src="scripts/weaponshop.js"></script>
+    <script src="scripts/battle.js"></script>
+    <script src="scripts/save.js"></script>
+    <script src="scripts/ascend.js"></script>
+    <script src="scripts/secrets.js"></script>
+</body>
+</html>

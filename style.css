@@ -1,0 +1,312 @@
+@font-face {
+    font-family: tf2build;
+    src: url(assets/fonts/tf2build.ttf);
+}
+
+.gameplay {
+    display: block;
+    text-align: center;
+    width: 15%;
+    font-size: 24px;
+}
+
+.scoutbutton {
+    position: absolute;
+    
+    transform-origin: center center;
+}
+
+.scoutbuttonimg {
+    transition-duration: 0.5s;
+    width: 100%;
+    height: auto;
+    
+}
+
+.scoutbuttonimg:hover {
+    width: 102%;
+    height: auto;
+}
+
+.scoutbuttonimg:active {
+    width: 98%;
+    height: auto;
+}
+
+.navtop {
+    background-color: rgb(54, 54, 54);
+    color: rgb(255,255,255);
+}
+
+.console {
+    
+    position: absolute;
+    left: 20%;
+    display:block;
+    width: 25%;
+    background-color: rgba(139, 139, 139, 0.274);
+    color: #fff;
+    border: 5px rgba(139, 139, 139, 0.274) solid;
+    border-radius: 5px;
+    height: 20%;
+}
+
+.debtbutton {
+    user-select: none;
+    position: absolute;
+    display: flex;
+    left: 20%;
+    top: 35%;
+    color:#fff;
+    width: 25%;
+    height: 20%;
+}
+
+.debtbutton:active {
+    width: 24%;
+    height: 19%;
+    left: 19.5%;
+    top: 35%;
+}
+
+.shopopen {
+    position:absolute;
+    color: #fff;
+    text-decoration: underline;
+    top: 50%;
+    left: 92%;
+    border: 5px solid transparent;
+    border-image: url(assets/border/wood.png) 25;
+    background-image: url(assets/border/woodback.png);
+}
+
+.shop {
+    display: block;
+    position:absolute;
+    color: #fff;
+    height: auto;
+    top: 10%;
+    width: 30%;
+    left: 100%;
+    height: 80%;
+    border: 5px solid transparent;
+    border-image: url(assets/border/wood.png) 25;
+    background-image: url(assets/border/woodback.png);
+    overflow-y: scroll;
+}
+
+.shopbutton {
+    border: 5px solid transparent;
+    border-image: url(assets/border/wood.png) 25;
+    background-image: url(assets/border/woodback.png);
+    display: block;
+    color: #fff;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+.shopicon {
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
+
+.exitshop {
+    text-decoration: underline;
+}
+
+.genstatus {
+    position: absolute;
+    top: 55%;
+}
+
+.secret1 {
+    position: absolute;
+    top: 99%;
+    font-size: 8px;
+}
+
+.ascendbutton {
+    position: absolute;
+    display: none;
+    left: 20%;
+    top: 55%;
+    color:#fff;
+    width: 15%;
+    height: 10%;
+
+}
+
+.ascendbutton:active {
+    width: 14%;
+    height: 9%;
+    left:19.5%;
+    top: 55%;
+}
+
+.weaponshopopen {
+    position:absolute;
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+    top: 90%;
+    left: 42%;
+    border: 5px solid transparent;
+    border-image: url(assets/border/wood.png) 25;
+    background-image: url(assets/border/woodback.png);
+}
+
+.weaponshop {
+    display: block;
+    position:absolute;
+    color: #fff;
+    height: auto;
+    top: 100%;
+    width: 30%;
+    left: 35%;
+    height: 49%;
+    border: 5px solid transparent;
+    border-image: url(assets/border/wood.png) 25;
+    background-image: url(assets/border/woodback.png);
+
+    
+
+}
+
+.engieportrait {
+    display: block;
+    width: 40%;
+}
+
+.weaponselection {
+    display: block;
+    width: 60%;
+    top: 0%;
+    left: 40%;
+    position:absolute;
+
+    overflow-y: scroll;
+}
+
+.battlemenuparent {
+    border: 5px solid transparent;
+    border-image: url(assets/border/wood.png) 25;
+    background-image: url(assets/border/woodback.png);
+    height: 500px;
+    width: 1000px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform-origin: center center;
+    z-index: 2;
+    top: 50%;
+    left: 25%;
+    margin: -35px 0 0 -35px;
+}
+
+.battlemenu {
+    width: 75%;
+    height: 75%;
+    border: 5px solid transparent;
+    border-image: url(assets/border/wood.png) 25;
+    display: block;
+    background-image: none;
+    
+
+}
+
+.battlexit {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.enemy_sprite {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+.enemy_sprite:active {
+    animation-name: shake;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+    0% {
+        top: 50%;
+        left: 45%;
+    }
+    10% {
+        top: 47%;
+        left: 45%;
+    }
+    25% {
+        top: 48%;
+        left: 43%;
+    }
+    50% {
+        top: 52%;
+        left: 47%;
+    }
+    75% {
+        top: 50%;
+        left: 50%;
+    }
+    100% {
+        top: 51%;
+        left: 46%;
+    }
+}
+
+
+@keyframes weaponshopopenani {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 50%;
+    }
+}
+@keyframes weaponshopcloseani {
+    0% {
+        top: 50%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+
+@keyframes shopopen {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 75%;
+    }
+}
+@keyframes shopclose {
+    0% {
+        left: 75%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+body {
+    background-image: url(assets/background/background_1.png);
+    font-family: tf2build;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a, a:visited {
+    color: #fff;
+}
