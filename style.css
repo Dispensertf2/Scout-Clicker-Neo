@@ -11,7 +11,8 @@
 }
 
 .scoutbutton {
-    position: absolute;
+  	
+	
     
     transform-origin: center center;
 }
@@ -41,6 +42,7 @@
 .console {
     
     position: absolute;
+		top: 10%;
     left: 20%;
     display:block;
     width: 25%;
@@ -49,6 +51,12 @@
     border: 5px rgba(139, 139, 139, 0.274) solid;
     border-radius: 5px;
     height: 20%;
+}
+
+.messagebox {
+	position: absolute;
+	top: 30%;
+	left: 30%;
 }
 
 .debtbutton {

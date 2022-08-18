@@ -1,5 +1,5 @@
-add weapon shop
-
-add combat
+add combat (almost done)
 
 add pet heavy
+
+make css scaling better (more specifically make it possible to play on smaller screens)
